@@ -4,5 +4,6 @@
   "react-hmre"
 ],
   "plugins": [
-  "react-hot-loader/babel"
+  "react-hot-loader/babel",
+  "styled-components"
 ]
