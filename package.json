@@ -37,15 +37,12 @@
     "url": "https://github.com/pavel06081991/polina-grow/issues"
   },
   "homepage": "https://github.com/pavel06081991/polina-grow#readme",
-  "babel": {
-    "presets": ["env", "react"],
-    "plugins": [ "react-hot-loader/babel" ]
-  },
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.5",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
+    "babel-preset-react-hmre": "^1.1.1",
     "eslint": "^4.19.1",
     "eslint-config-airbnb": "^17.0.0",
     "eslint-config-prettier": "^2.9.0",
@@ -58,18 +55,24 @@
     "lint-staged": "^7.2.0",
     "prettier": "1.13.7",
     "prettier-eslint": "^8.8.2",
-    "react-hot-loader": "^4.3.4",
     "webpack": "^4.16.1",
     "webpack-cli": "^3.1.0",
     "webpack-dev-server": "^3.1.4"
   },
   "dependencies": {
+    "history": "^4.7.2",
     "immutable": "^3.8.2",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
+    "react-hot-loader": "^4.3.4",
+    "react-immutable-proptypes": "^2.1.0",
     "react-redux": "^5.0.7",
     "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1",
+    "react-router-redux": "^5.0.0-alpha.9",
     "redux": "^4.0.0",
+    "redux-form": "^7.4.2",
+    "redux-immutable": "^4.0.0",
     "redux-saga": "^0.16.0",
     "reselect": "^3.0.1",
     "styled-components": "^3.3.3"
