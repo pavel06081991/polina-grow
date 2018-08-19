@@ -23,5 +23,12 @@ module.exports = {
       },
     ],
   },
+  devServer: {
+    port: 3000,
+    open: true,
+    proxy: {
+      '/api': 'http://localhost:8080',
+    },
+  },
   plugins: [htmlPlugin, new webpack.HotModuleReplacementPlugin()],
 };
