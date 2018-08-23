@@ -2,12 +2,16 @@
 node_modules/
 #
 #
-#объектные и архивные файлы, которые могут появиться во время сборки кода
+#File with archives and objects, could be generated while code bundling
 *.[oa]
 #
 #
-# временныe файлы во многих текстовых редакторах (Ecmas)
+# temporary files produced by lots of IDE's (Ecmas)
 *~
 #
 *.idea
+#
+#
+# bundled files
+dist/
 #

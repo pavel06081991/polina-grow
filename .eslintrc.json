@@ -5,8 +5,15 @@
     "prettier"
   ],
   "plugins": [
-    "prettier"
+    "prettier",
+    "react"
   ],
+  "settings": {
+    "import/extensions": [
+      ".js",
+      ".jsx"
+    ]
+  },
   "parserOptions": {
     "sourceType": "module",
     "ecmaFeatures": {
