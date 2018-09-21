@@ -1,9 +1,0 @@
-"presets": [
-  "env",
-  "react",
-  "react-hmre"
-],
-  "plugins": [
-  "react-hot-loader/babel",
-  "styled-components"
-]

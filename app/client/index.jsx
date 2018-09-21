@@ -9,17 +9,16 @@ import App from './containers/App';
 
 const render = Component => {
   ReactDOM.render(
-    <AppContainer>
-      <Provider strore={store}>
-        {/* ConnectedRouter will use the store from Provider automatically */}
-        <ConnectedRouter history={history}>
+    <Provider strore={store}>
+      <ConnectedRouter store={store} history={history}>
+        <AppContainer>
           <Component />
-        </ConnectedRouter>
-      </Provider>
-    </AppContainer>,
+        </AppContainer>
+      </ConnectedRouter>
+    </Provider>,
     document.getElementById('app'),
   );
-};
+}
 
 render(App);
 

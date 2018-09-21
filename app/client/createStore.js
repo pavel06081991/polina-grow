@@ -1,9 +1,8 @@
-import { Immutable } from 'immutable';
+import { Map } from 'immutable';
 import { createStore, applyMiddleware } from 'redux';
 import createHistory from 'history/createBrowserHistory';
 import { routerMiddleware } from 'react-router-redux';
-import { createSagaMiddleware } from 'redux-saga';
-
+import createSagaMiddleware from 'redux-saga';
 import rootReducer from './rootReducer';
 
 // Create a history of your choosing (we're using a browser history in this case)
@@ -14,7 +13,7 @@ const history = createHistory();
 // 2. routerMiddleware: Syncs the location/URL path to the state
 const middlewares = [createSagaMiddleware(), routerMiddleware(history)];
 
-const initialState = Immutable.Map();
+const initialState = Map();
 const store = createStore(
   rootReducer,
   initialState,
